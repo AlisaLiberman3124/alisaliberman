@@ -225,4 +225,3 @@ def generate_sudoku(N: int) -> tp.List[tp.List[str]]:
 
 if __name__ == "__main__":
     pass
-
