@@ -208,16 +208,6 @@ def generate_sudoku(N: int) -> tp.List[tp.List[str]]:
     """
     initial: list = [["." for j in range(9)] for i in range(9)]
     sudoku: Any = solve(initial)
-    # removed: list = []
-    #
-    # while len(removed) < len(sudoku) ** 2 - N:
-    #     row = randint(0, 8)
-    #     col = randint(0, 8)
-    #     pos = (row, col)
-    #     if pos not in removed:
-    #         sudoku[row][col] = "."
-    #         removed.append(pos)
-    # return sudoku
     mask = list(" " * N + "." * (81 - N))
     shuffle(mask)
     return [[sudoku[i][j] if mask[i * 9 + j] != "." else "." for j in range(9)] for i in range(9)]
