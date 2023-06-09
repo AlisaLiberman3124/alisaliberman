@@ -22,7 +22,7 @@ class Console(UI):
                 screen.addstr(row, col, smile)
 
     def run(self) -> None:
-        screen = curses.initscr() #type:ignore
+        screen = curses.initscr() # type:ignore
         # PUT YOUR CODE HERE
         self.draw_borders(screen)
         self.draw_grid(screen)
@@ -32,12 +32,12 @@ class Console(UI):
             self.draw_grid(screen)
             screen.refresh()
             time.sleep(0.2)
-        curses.endwin() #type:ignore
+        curses.endwin() # type:ignore
 
 
-scr = curses.initscr() #type:ignore
+scr = curses.initscr() # type:ignore
 size = scr.getmaxyx()
-curses.endwin() #type:ignore
+curses.endwin() # type:ignore
 
 life = GameOfLife((size[0] - 10, size[1] - 10), max_generations=100)
 ui = Console(life)
