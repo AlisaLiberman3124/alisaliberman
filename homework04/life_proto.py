@@ -2,8 +2,8 @@ import typing as tp
 from pprint import pprint as pp
 from random import randint
 
-import pygame  # type: ignore
-from pygame.locals import *  # type: ignore
+import pygame  # type:ignore
+from pygame.locals import *  # type:ignore
 
 Cell = tp.Tuple[int, int]
 Cells = tp.List[int]

@@ -1,7 +1,7 @@
 from typing import Tuple
 import pygame
-from pygame.locals import *  # type: ignore
-from life import GameOfLife  # type: ignore
+from pygame.locals import *  # type:ignore
+from life import GameOfLife  # type:ignore
 from ui import UI
 
 
@@ -63,6 +63,7 @@ class GUI(UI):
             self.draw_lines()
             pygame.display.flip()
             clock.tick(self.speed)
+
 
 life = GameOfLife(size=(20, 30), randomize=True)
 gui = GUI(life, cell_size=15)
