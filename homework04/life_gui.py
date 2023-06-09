@@ -1,7 +1,7 @@
 from typing import Tuple
 import pygame
-from pygame.locals import *
-from life import GameOfLife
+from pygame.locals import *  # type: ignore
+from life import GameOfLife  # type: ignore
 from ui import UI
 
 
