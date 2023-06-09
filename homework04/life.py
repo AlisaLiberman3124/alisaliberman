@@ -91,6 +91,3 @@ class GameOfLife:
                 for x in _:
                     f.write(str(x) + " ")
                 f.write("\n")
-
-
-

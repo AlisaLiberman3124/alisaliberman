@@ -140,5 +140,3 @@ if __name__ == "__main__":
         [1, 1, 1, 1, 0, 1, 1, 1],
     ]
     pp(game.get_next_generation())
-
-
